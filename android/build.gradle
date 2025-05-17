@@ -9,7 +9,7 @@ apply plugin: 'com.android.application'
 
 
 android {
-  namespace "io.github.some_example_name"
+  namespace "daniel.m8.uf3"
   compileSdk 35
   sourceSets {
     main {
@@ -31,7 +31,7 @@ android {
 		}
   }
   defaultConfig {
-    applicationId 'io.github.some_example_name'
+    applicationId 'daniel.m8.uf3'
     minSdkVersion 19
     targetSdkVersion 35
     versionCode 1
@@ -124,7 +124,7 @@ tasks.register('run', Exec) {
   }
 
   def adb = path + "/platform-tools/adb"
-  commandLine "$adb", 'shell', 'am', 'start', '-n', 'io.github.some_example_name/io.github.some_example_name.android.AndroidLauncher'
+  commandLine "$adb", 'shell', 'am', 'start', '-n', 'daniel.m8.uf3/daniel.m8.uf3.android.AndroidLauncher'
 }
 
 eclipse.project.name = appName + "-android"
